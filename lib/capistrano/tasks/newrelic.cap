@@ -12,7 +12,6 @@ end
 namespace :newrelic do
   desc "Record a deployment in New Relic (newrelic.com)"
   task :notice_deployment do
-    set :newrelic_appname, fetch(:application)
     run_locally do
 
       deploy_options = {
